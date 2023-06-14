@@ -4,6 +4,15 @@
     <title>Careers</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+      function add() {
+        const counter = window.document.getElementById('counter');
+
+        var number = parseInt(counter.innerText);
+
+        counter.innerText = number + 1;
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -17,7 +26,9 @@
       </nav>
     </header>
     <section>
-      <h1>Careers</h1>
+      <h1 id="careers">Counter</h1>
+      <p id="counter">0</p>
+      <button onclick="add()">Add</button>
     </section>
   </body>
 </html>
